@@ -1,51 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <link href='https://fonts.googleapis.com/css?family=Major Mono Display' rel='stylesheet'>
-<style>
-body {
-    font-family: 'Major Mono Display';
-}
-</style> 
-<style>
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: white;
-    }
-    
-    li {
-      float: left;
-    }
-    
-    li a {
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    
-    li a:hover {
-      background-color: white;
-    }
-    </style>
-    </head>
-    <body>
-    
-
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="ar.html">AR</a></li>
-  <li><a href="games.html">Games</a></li>
-</ul>
-
-</body>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | KSG</title>
+    <title>Unity WebGL Player | New Unity Project (24)</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -61,20 +19,20 @@ body {
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">KSG</div>
+        <div id="unity-build-title">New Unity Project (24)</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/KSG Web Build.loader.js";
+      var loaderUrl = buildUrl + "/KSG2.loader.js";
       var config = {
-        dataUrl: buildUrl + "/KSG Web Build.data",
-        frameworkUrl: buildUrl + "/KSG Web Build.framework.js",
-        codeUrl: buildUrl + "/KSG Web Build.wasm",
+        dataUrl: buildUrl + "/KSG2.data.gz",
+        frameworkUrl: buildUrl + "/KSG2.framework.js.gz",
+        codeUrl: buildUrl + "/KSG2.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: " Andrew Punchak",
-        productName: "KSG",
-        productVersion: "0.1",
+        companyName: "DefaultCompany",
+        productName: "New Unity Project (24)",
+        productVersion: "1.0",
       };
 
       var container = document.querySelector("#unity-container");
@@ -87,8 +45,8 @@ body {
         container.className = "unity-mobile";
         config.devicePixelRatio = 1;
       } else {
-        canvas.style.width = "1920px";
-        canvas.style.height = "1080px";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
       loadingBar.style.display = "block";
 
