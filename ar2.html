@@ -2,14 +2,14 @@
 <html>
 <body>
 	<p style="text-align:center;">Tap on the image below with an iPhone/iPad with iOS 12+ and it will automatically bring you into an AR experience without any outside app download or external hoops to jump through.</p>
-	<a rel="ar" id="CustomBanner" href="arfiles/musicpromo.reality#custom=https://www.google.com&customHeight=large">
+	<a rel="ar" id="CustomBanner" href="arfiles/musicpromo.reality#custom=https://www.youtube.com&customHeight=large">
 		<img src="arcovers/anom.png">
 	</a>
 
 	<script>
 		document.getElementById("arfiles/musicpromo.reality").addEventListener("message", function (event) {   
 			if (event.data == "_apple_ar_quicklook_button_tapped") {
-				document.write("<a href=\"www.google.com\">").click();
+				document.write("<a href=\"www.youtube.com\">").click();
 				  
 			}
 		}, true);
